@@ -446,6 +446,7 @@ local EventHuntData = {
         emoji        = "🌋",
         thumbUrl     = FishImageURL["Pyrocoil"],
     },
+    --[[ dinonaktifkan -- Treasure
     {
         textTriggers = { "treasure hunt" },
         title        = EMOJI_TREASURE .. " Treasure Hunt Dimulai!",
@@ -454,6 +455,8 @@ local EventHuntData = {
         emoji        = "💰",
         thumbUrl     = FishImageURL["treasure hunt"],
     },
+    ]]
+    --[[ dinonaktifkan -- Crystal
     {
         textTriggers = { "crystals have spawned", "crystals have", "crystal" },
         title        = EMOJI_CRYSTAL .. " Crystal Event Dimulai!",
@@ -462,6 +465,8 @@ local EventHuntData = {
         emoji        = "💎",
         thumbUrl     = FishImageURL["Crystal"],
     },
+    ]]
+    --[[ dinonaktifkan -- Dark Megalodon Hunt
     {
         textTriggers = { "dark megalodon hunt", "dark megalodon" },
         title        = "🌑 Dark Megalodon Hunt Dimulai!",
@@ -470,6 +475,8 @@ local EventHuntData = {
         emoji        = "🌑",
         thumbUrl     = FishImageURL["Dark Megalodon"],
     },
+    ]]
+    --[[ dinonaktifkan -- Megalodon Hunt
     {
         textTriggers = { "megalodon hunt" },
         title        = EMOJI_MEGALODON .. " Megalodon Hunt Dimulai!",
@@ -478,6 +485,8 @@ local EventHuntData = {
         emoji        = "🦈",
         thumbUrl     = FishImageURL["Megalodon"],
     },
+    ]]
+    --[[ dinonaktifkan -- Thunderzilla Hunt
     {
         textTriggers = { "thunderzilla hunt", "thunderzilla" },
         title        = EMOJI_THUNDER .. " Thunderzilla Hunt Dimulai!",
@@ -486,6 +495,7 @@ local EventHuntData = {
         emoji        = "⚡",
         thumbUrl     = FishImageURL["Thunderzilla"],
     },
+    ]]
     --[[ dinonaktifkan -- Aurora Borealis
     {
         textTriggers = { "aurora borealis", "aurora event" },
