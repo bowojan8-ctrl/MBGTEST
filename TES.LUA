@@ -1115,7 +1115,7 @@ local function SendMonitorStartedWebhook(allPlayers, names)
         username   = "M B G",
         avatar_url = WEBHOOK_AVATAR,
         embeds     = { BuildEmbed(
-            EMOJI_STARTER .. " Monitor Started",
+            EMOJI_STARTER .. " Monitor Started update jam 3 bismillah",
             "Server monitor sudah aktif",
             TierColors.Join,
             {
