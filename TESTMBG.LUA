@@ -462,7 +462,6 @@ local EventHuntData = {
         emoji        = "💎",
         thumbUrl     = FishImageURL["Crystal"],
     },
-    --[[ dinonaktifkan -- Dark Megalodon Hunt
     {
         textTriggers = { "dark megalodon hunt", "dark megalodon" },
         title        = "🌑 Dark Megalodon Hunt Dimulai!",
@@ -471,8 +470,6 @@ local EventHuntData = {
         emoji        = "🌑",
         thumbUrl     = FishImageURL["Dark Megalodon"],
     },
-    ]]
-    --[[ dinonaktifkan -- Megalodon Hunt
     {
         textTriggers = { "megalodon hunt" },
         title        = EMOJI_MEGALODON .. " Megalodon Hunt Dimulai!",
@@ -481,7 +478,6 @@ local EventHuntData = {
         emoji        = "🦈",
         thumbUrl     = FishImageURL["Megalodon"],
     },
-    ]]
     {
         textTriggers = { "thunderzilla hunt", "thunderzilla" },
         title        = EMOJI_THUNDER .. " Thunderzilla Hunt Dimulai!",
