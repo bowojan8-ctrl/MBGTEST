@@ -1116,11 +1116,11 @@ local function SendMonitorStartedWebhook(allPlayers, names)
         username   = "M B G",
         avatar_url = WEBHOOK_AVATAR,
         embeds     = { BuildEmbed(
-            EMOJI_STARTER .. " Monitor Started update jam 3 bismillah",
+            EMOJI_STARTER .. " Monitor Started",
             "Server monitor sudah aktif",
             TierColors.Join,
             {
-                { name = SEP .. " Host Server",  value = "SERVER BANG ADULLLLLLLLLL",                    inline = true },
+                { name = SEP .. " Host Server",  value = "SERVER BANG ADULLLLL",                    inline = true },
                 { name = SEP .. " Total Player", value = "**" .. tostring(#allPlayers) .. "** orang", inline = true },
                 { name = SEP .. " Daftar Player", value = "```\n" .. table.concat(names, ", ") .. "```", inline = false },
             }
@@ -1254,7 +1254,7 @@ local function SendEventWebhook(eventData, rawText)
             eventData.description,
             eventData.color,
             {
-                { name = SEP .. " Host Server",  value = "SERVER BANG ADULLLLLLLLLL",              inline = true },
+                { name = SEP .. " Host Server",  value = "SERVER BANG ADULLLLL",              inline = true },
                 { name = SEP .. " Total Player", value = "**" .. tostring(#Players:GetPlayers()) .. "** orang", inline = true },
                 { name = SEP .. " Berakhir Pada", value = "<t:" .. tostring(endTime) .. ":R>", inline = true },
             },
