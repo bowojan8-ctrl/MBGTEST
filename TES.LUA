@@ -42,7 +42,7 @@ local TierColors = {
     Leave                        = 16729344,
     NotBack                      = 16711680,
     AFK                          = 8421504,
-    Mitos                        = 16711680, -- merah polos buat tier Mitos (Shiny Hammerhead Shark, dll)
+    Mitos                        = 16711680, -- merah polos buat tier Mitos (Shiny Hammerhead Shark, Cosmic Hammerhead Shark, Cosmic Blobfish)
 }
 
 local EMOJI_NOTIF                = "<a:notif:1549879003442053140>"
@@ -185,7 +185,7 @@ local LegendaryCrystalList = {
 --  MYTHIC TIER (embed merah, terpisah dari Secret/Ruby/Legendary)
 -- ============================================================
 local MythicFishList = {
-    "Shiny Hammerhead Shark",
+    "Shiny Hammerhead Shark", "Cosmic Hammerhead Shark", "Cosmic Blobfish",
     -- tinggal nambahin string baru di sini kalau nanti ada ikan mitos lain
 }
 
@@ -1456,7 +1456,7 @@ local function CheckAndSend(rawMsg)
         return
     end
 
-    -- Mythic tier (Shiny Hammerhead Shark, dll) -- embed merah polos, dicek SEBELUM
+    -- Mythic tier (Shiny Hammerhead Shark, Cosmic Hammerhead Shark, Cosmic Blobfish) -- embed merah polos, dicek SEBELUM
     -- Ruby & Secret biar gak ketimpa deteksi lain.
     local mythicBase = FindMythicFish(data.fish)
     if mythicBase then
