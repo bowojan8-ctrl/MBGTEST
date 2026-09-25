@@ -1338,7 +1338,26 @@ end
 local function HookLabel(label)
     if _hookedLabels[label] then return end
     _hookedLabels[label] = true
-    ProcessEventText(label.Text, label)
+
+    -- Teks yang sudah ada saat script execute hanya dijadikan baseline.
+    -- Jangan dianggap sebagai event baru. Webhook baru dikirim saat teks
+    -- berubah dari OFF -> ON setelah monitor aktif.
+    local initialText = label.Text or ""
+    local lower = initialText:lower()
+    local state = {}
+    LabelEventState[label] = state
+
+    for _, evData in ipairs(EventHuntData) do
+        local matched = false
+        for _, trigger in ipairs(evData.textTriggers) do
+            if lower:find(trigger, 1, true) then
+                matched = true
+                break
+            end
+        end
+        state[evData.title] = matched
+    end
+
     label:GetPropertyChangedSignal("Text"):Connect(function()
         ProcessEventText(label.Text, label)
     end)
